@@ -1,6 +1,6 @@
 
 Name:           python-polib
-Version:        0.5.3
+Version:        0.5.4
 Release:        %mkrel 1
 Summary:        A library to parse and manage gettext catalogs
 
