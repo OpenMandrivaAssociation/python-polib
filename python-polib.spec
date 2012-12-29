@@ -1,14 +1,12 @@
-
 Name:           python-polib
-Version:        0.6.3
-Release:        %mkrel 1
+Version:        1.0.2
+Release:        1
 Summary:        A library to parse and manage gettext catalogs
 
 Group:          Development/Python
 License:        MIT
 URL:            http://bitbucket.org/izi/polib/
-Source0:	    http://bitbucket.org/izi/polib/downloads/polib-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
+Source0:	http://bitbucket.org/izi/polib/downloads/polib-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python-devel
@@ -30,11 +28,9 @@ POFile, MOFile, POEntry and MOEntry for creating new files/entries.
 %{__python} setup.py build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+%{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
@@ -63,4 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 * Wed Sep 29 2010 Michael Scherer <misc@mandriva.org> 0.5.3-1mdv2011.0
 + Revision: 581951
 - import python-polib
+
 
