@@ -1,5 +1,5 @@
 Name:           python-polib
-Version:        1.0.3
+Version:        1.0.4
 Release:        1
 Summary:        A library to parse and manage gettext catalogs
 
@@ -25,17 +25,17 @@ POFile, MOFile, POEntry and MOEntry for creating new files/entries.
 %setup -q -n polib-%{version}
 
 %build
-%{__python} setup.py build
+python setup.py build
 
 %install
-%{__python} setup.py install -O1 --skip-build --root %{buildroot}
+python setup.py install -O1 --skip-build --root %{buildroot}
 
 %clean
 
 %files
 %defattr(-,root,root,-)
 %doc LICENSE 
-%{python_sitelib}/*
+%{py_puresitedir}/*
 
 
 
@@ -59,5 +59,6 @@ POFile, MOFile, POEntry and MOEntry for creating new files/entries.
 * Wed Sep 29 2010 Michael Scherer <misc@mandriva.org> 0.5.3-1mdv2011.0
 + Revision: 581951
 - import python-polib
+
 
 
