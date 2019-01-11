@@ -2,5 +2,6 @@ removed_sources:
   polib-0.6.3.tar.gz: 8befcfd5e2d82f3caadb1a2198dd6b3c9d2ec660
   polib-1.0.2.tar.gz: 1fbc47667fa575fdb698545cdd68b8da86c784a4
   polib-1.0.3.tar.gz: 247ef0d0a830ca354f1979e8e43e63e4dc61a89a
-sources:
   polib-1.0.4.tar.gz: e0a6014863897571a38f42237cfa2c302396467f
+sources:
+  polib-1.0.7.tar.gz: 0ef6302b7ddaf8211e7e034c7fd35ee339833f29
