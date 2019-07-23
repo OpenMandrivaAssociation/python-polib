@@ -1,12 +1,12 @@
 Name:           python-polib
-Version:        1.0.4
-Release:        4
+Version:	1.1.0
+Release:	1
 Summary:        A library to parse and manage gettext catalogs
 
 Group:          Development/Python
 License:        MIT
 URL:            http://bitbucket.org/izi/polib/
-Source0:	http://bitbucket.org/izi/polib/downloads/polib-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/57/61/82688564bf24ec4fa349be5ebcb4fbf49551bd1e3203c13d6196ef6b56ff/polib-1.1.0.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python-devel
